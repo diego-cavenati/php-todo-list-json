@@ -23,7 +23,7 @@
                 <ul>
                     <li v-for="task in tasks">{{task}}</li>
                 </ul>
-                <form action="index.html" method="post">
+                <form action="server.php" method="post">
                     <input type="text" name="newTask" id="newTask" placeholder="Aggiungi una nuova task">
                     <button type="submit" class="btn btn-primary">Aggiungi!</button>
                 </form>
