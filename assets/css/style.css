@@ -3,11 +3,10 @@ body {
 }
 
 main {
-    height: 100vh;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .mainBox {
@@ -15,4 +14,27 @@ main {
     background-color: white;
     border-radius: 2rem;
     max-height: 80%;
+    width: 800px;
+}
+
+li {
+    list-style: none;
+    padding: 0.4rem 0;
+    font-size: 1.2rem;
+}
+
+form {
+    margin-top: 1rem;
+    display: flex;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #dedede;
+    padding-left: 0.8rem;
+}
+
+button {
+    width: 30%;
 }

@@ -19,11 +19,20 @@
     <main id="app">
         <div class="mainBox">
             <div class="container text-center">
-
+                <h1>Tasks list</h1>
+                <ul>
+                    <li v-for="task in tasks">{{task}}</li>
+                </ul>
+                <form action="index.html" method="post">
+                    <input type="text" name="newTask" id="newTask" placeholder="Aggiungi una nuova task">
+                    <button type="submit" class="btn btn-primary">Aggiungi!</button>
+                </form>
             </div>
         </div>
     </main>
 
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- Vue script -->
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <script src='./assets/js/app.js'></script>
